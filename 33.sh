@@ -96,3 +96,5 @@ counter=0
     # 
     done 
 done 
+value=`cat readmei.md`
+echo "$value"
