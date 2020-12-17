@@ -98,3 +98,6 @@ counter=0
 done 
 value=`cat readmei.md`
 echo "$value"
+git add .
+git commit -m ""
+git push
