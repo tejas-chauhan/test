@@ -98,6 +98,8 @@ counter=0
 done 
 value=`cat readmei.md`
 echo "$value"
+a=$(git log -1 | grep ^commit | cut -d " " -f 2)
+echo $a >> "dxd"
 git config --global user.email "tejas.chauhan112@gmail.com"
 git config --global user.name "tejas-chauhan"
 git add .
