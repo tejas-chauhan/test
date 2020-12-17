@@ -98,6 +98,8 @@ counter=0
 done 
 value=`cat readmei.md`
 echo "$value"
+git config --global user.email "tejas.chauhan112@gmail.com"
+git config --global user.name "tejas-chauhan"
 git add .
 git commit -m ""
 git push
