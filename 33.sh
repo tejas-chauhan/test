@@ -101,5 +101,5 @@ echo "$value"
 git config --global user.email "tejas.chauhan112@gmail.com"
 git config --global user.name "tejas-chauhan"
 git add .
-git commit -m ""
+git commit -m "update"
 git push
