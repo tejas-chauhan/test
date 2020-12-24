@@ -39,7 +39,6 @@ jobs:
           # Literal body: 
 #         body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
-          body: ${{secrets.README}}
           to: bindiya.balvani@volansys.com
           from: Tejas Chauhan # <user@example.com>
           # Optional carbon copy recipients
