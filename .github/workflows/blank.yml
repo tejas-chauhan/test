@@ -45,7 +45,7 @@ jobs:
 #         body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
           body: ${{matrix.body}}
-          to: bindiya.balvani@volansys.com
+          to: tejas.chauhan112@gmail.com
           from: Tejas Chauhan # <user@example.com>
           # Optional carbon copy recipients
           # Optional content type (defaults to text/plain):
