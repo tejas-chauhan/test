@@ -23,9 +23,6 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: bash ./33.sh
-      - uses: actions/checkout@v2 
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
         with:
@@ -45,5 +42,3 @@ jobs:
           content_type: text/html
           # Optional converting Markdown to HTML (set content_type to text/html too):
           convert_markdown: true
-          # Optional attachments:
-          attachments: attachments.zip,git.diff,./dist/static/main.js
