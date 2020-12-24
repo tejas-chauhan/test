@@ -16,7 +16,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    strategy:
+      max-parallel: 1
+      matrix:
+        include:
+          - content_type: text/markdown
+            body: file://readmei.md
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -39,6 +44,7 @@ jobs:
           # Literal body: 
 #         body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
+          body: ${{matrix.body}}
           to: bindiya.balvani@volansys.com
           from: Tejas Chauhan # <user@example.com>
           # Optional carbon copy recipients
