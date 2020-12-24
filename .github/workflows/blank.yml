@@ -33,7 +33,7 @@ jobs:
           username: ${{secrets.USERNAME}}
           password: ${{secrets.PASSWORD}}
           subject: Github Actions job result
-          # Literal body:
+          # Literal body: 
 #         body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
           body: file://readmei.md
