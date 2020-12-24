@@ -21,7 +21,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - name: Read readmei.md
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./readmei.md
+      - name: Echo readmei.md
+        run: echo ${{ steps.package.outputs.content }}
       # Runs a single command using the runners shell
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
