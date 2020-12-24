@@ -35,7 +35,7 @@ jobs:
 #         body: Build job of ${{github.repository}} completed successfully!
           # Read file contents as body:
           body: file://readmei.md
-          to: vivek.rajyaguru.dev@gmail.com
+          to: bindya.balvani@volansys.com
           from: Tejas Chauhan # <user@example.com>
           # Optional carbon copy recipients
           # Optional content type (defaults to text/plain):
